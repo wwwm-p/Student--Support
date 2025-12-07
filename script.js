@@ -17,22 +17,24 @@ function chooseUrgency(level) {
 }
 
 function sendEmail(counselorEmail) {
-  const name = document.getElementById("studentName").value.trim() || "[Your Name]";
-  const grade = document.getElementById("studentGrade").value.trim() || "[Your Grade]";
-  const reason = selectedReason || "I need academic or personal support.";
-  const urgency = selectedUrgency || "Moderate";
+  const name =
+    document.getElementById("studentName").value.trim() || "[Your Name]";
+  const grade =
+    document.getElementById("studentGrade").value.trim() || "[Your Grade]";
 
   const subject = "Support Request from Student";
   const body = `Hello,
 
 I would like to reach out for support.
 
-Reason: ${reason}
-Urgency: ${urgency}
+Reason: ${selectedReason}
+Urgency: ${selectedUrgency}
 
 Thank you,
 ${name}, ${grade}`;
 
-  const mailtoLink = `mailto:${counselorEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoLink; // Opens default mail app (Apple Mail / Gmail App / Outlook)
+  const mailtoLink =
+    `mailto:${counselorEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoLink;
 }
