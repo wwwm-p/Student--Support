@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Support</title>
-  <link rel="stylesheet" href="/Student--Support/style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-  <!-- Page 1 -->
+  <!-- Page 1: Reason Selection -->
   <div class="page active" id="page1">
-    <img src="/Student--Support/Pages1.png" alt="Welcome Page">
+    <img src="page1.png" alt="Welcome Page">
 
     <button class="hotspot academic" onclick="chooseReason('Academic stress or pressure')"></button>
     <button class="hotspot anxiety" onclick="chooseReason('Anxiety or panic attacks')"></button>
@@ -23,9 +22,9 @@
     <button class="hotspot unsure" onclick="chooseReason('I’m not ready to say')"></button>
   </div>
 
-  <!-- Page 2 -->
+  <!-- Page 2: Urgency Selection -->
   <div class="page" id="page2">
-    <img src="/Student--Support/Pages2.png" alt="Urgency Page">
+    <img src="page2.png" alt="Urgency Page">
 
     <button class="hotspot fine" onclick="chooseUrgency('I’m Doing Fine – Just Curious')"></button>
     <button class="hotspot littleoff" onclick="chooseUrgency('Feeling a Little Off')"></button>
@@ -35,13 +34,13 @@
     <button class="back-button" onclick="goToPage('page1')">Back</button>
   </div>
 
-  <!-- Page 3 -->
+  <!-- Page 3: Counselor Selection + Name Input -->
   <div class="page" id="page3">
-    <img src="/Student--Support/Pages3.png" alt="Counselor Page">
+    <img src="page3.png" alt="Counselor Page">
 
     <div class="input-container">
-      <input type="text" id="studentName" placeholder="Your Name">
-      <input type="text" id="studentGrade" placeholder="Your Grade">
+      <input type="text" id="studentName" placeholder="Your Name" />
+      <input type="text" id="studentGrade" placeholder="Your Grade" />
     </div>
 
     <div class="counselor-grid">
@@ -56,7 +55,8 @@
     <button class="back-button" onclick="goToPage('page2')">Back</button>
   </div>
 
-  <script src="/Student--Support/script.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
 
